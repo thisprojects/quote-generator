@@ -1,0 +1,160 @@
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  background-color: #f1f1f1;
+  color: #2f2f32;
+}
+.fadeOut {
+  opacity: 1;
+  /* make things visible upon start */
+  -webkit-animation: fadeOut ease-in 1;
+  /* call our keyframe named fadeOut, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeOut ease-in 1;
+  animation: fadeOut ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  transition: all 3s;
+}
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 0)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  transition: all 1s;
+  margin: 2px;
+}
+.inline {
+  display: inline;
+}
+.header {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 25px;
+  color: #dadad9;
+}
+.quoteBox {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 10px 15px 5px 15px;
+  min-height: 170px;
+}
+button {
+  background-color: #dadad9;
+  border: none;
+  color: #2f2f32;
+  padding: 12px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}
+button:focus {
+  outline: none;
+}
+.saveIt {
+  text-align: center;
+  padding: 0px 7px 0px 7px;
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.exists {
+  color: red;
+  min-height: 100px;
+}
+.quoteText {
+  margin: 10px 5px 20px 5px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.3em;
+  min-height: 70px;
+}
+.buttons {
+  margin-bottom: 10px;
+}
+input {
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  margin: 2px 2px;
+}
+input[type="submit"] {
+  background-color: #dadad9;
+  border: none;
+  color: #2f2f32;
+  padding: 12px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}

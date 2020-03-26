@@ -2,7 +2,7 @@
   "name": "quote-generator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.nathandownes.co.uk/quote-generator",
+  "homepage": ".",
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",

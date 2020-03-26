@@ -82,7 +82,8 @@ class Quote extends React.Component {
       this.setState({ errors: true, waiting: false })
     );
     const { quoteText = "Bad response", quoteAuthor = "Bad person" } = x || {};
-    if (!this.state.errors) {
+    console.log(quoteText, quoteAuthor, this.state.errors, this.state.waiting)
+    if (!this.state.errors && quoteText) {
       this.setState({ quoteText, quoteAuthor, waiting: false });
     }
   };
